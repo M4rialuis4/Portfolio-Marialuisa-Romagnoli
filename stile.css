@@ -1,0 +1,357 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.logo {
+    font-family: "Amaranth", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 40px;
+    color: #F89EC4;
+}
+
+.logo:hover {
+    opacity: 0.7;
+     color: #ff6fae;
+}
+
+.linea {
+    width: 75%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.titoloRosa {
+    max-width: 500px;
+    text-align: center;
+     line-height: 1.2;
+    font-family: "Amaranth", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #F89EC4;
+    font-size: 40px;
+    margin: 20px auto;
+}
+
+.sottotitolo {
+    margin-bottom: 5px;   /* spazio sotto molto piccolo */
+     max-width: 500px;
+    text-align: center;
+     line-height: 1.2;
+    font-family: "Amaranth", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #F89EC4;
+    font-size: 40px;
+    margin: 20px auto;
+}
+
+.p-contatti {
+    margin: 0;
+    font-family: "Amaranth", sans-serif;
+    color: #fff;
+    font-size: 23px;
+    margin: 10px 0;
+}
+
+h1 {
+    font-family: "Amaranth", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #F89EC4;
+    font-size: 40px;
+    margin: 0;
+}
+
+.titolo2Rosa {
+    font-family: "Amaranth", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #F89EC4;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-family: "Amaranth", sans-serif;
+    color: #fff;
+    font-size: 23px;
+    margin: 30px 0;
+}
+
+.bottoneContatti {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F89EC4;
+    font-family: "Amaranth", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #000;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    margin: 30px auto 0 auto;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+footer .linea {
+    width: 75%;
+    margin: 0;
+}
+
+footer p {
+    color: #fff;
+    margin: 10px 0;
+    text-align: center;
+}
+
+hr.linea {
+    border: 0;
+    border-top: 1px solid #fff;
+    width: 75%;
+    margin: 10px 0;
+}
+
+.breadcrumb {
+    text-decoration: none;
+    color: #fff;
+}
+
+.immaginiHome {
+    display: flex;
+    justify-content: center; /* le centra */
+    gap: 30px; /* spazio tra le immagini */
+    margin-top: 40px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    width: 300px; /* dimensione fissa */
+}
+
+.card a {
+    text-decoration: none;
+    color: white;
+}
+
+.immagine {
+    display: block;
+    width: 100%;
+    transition: transform 0.4s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.4); /* puoi abbassare se vuoi */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+
+    font-family: "Amaranth", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #F89EC4; /* il tuo rosa */
+}
+
+.card:hover .immagine {
+    transform: scale(1.1);
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.immaginiHome a {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    overflow: hidden; /* taglia l'immagine che esce */
+}
+
+.immaginiHome img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+.immaginiFoto {
+    display: block;           /* blocco verticale */
+    text-align: center;       /* centra le card */
+    gap: 20px;                /* spazio tra le immagini */
+}
+
+.immaginiFoto img {
+    width: 700px;             /* larghezza fissa */
+    height: 500px;            /* altezza fissa per rettangolo */
+    object-fit: cover;        /* mantiene proporzioni e ritaglia se necessario */
+    border-radius: 0;         /* elimina eventuale arrotondamento */
+    display: block;
+    margin: 20px auto;        /* spazio verticale e centratura */
+}
+.immaginiDisegno {
+    display: block;           
+    text-align: center;       
+    gap: 20px;                
+}
+
+.immaginiDisegno img {
+      display: block;
+    margin: 20px auto;   
+    border-radius: 0;    
+    width: 80%;           
+    height: auto;         
+    max-width: 600px;   
+}
+.immaginiYokai {
+    display: block;           
+    text-align: center;       
+    gap: 20px;                
+}
+
+.immaginiYokai img {
+    width: 700px;             
+    height: 500px;            
+    object-fit: cover;        
+    border-radius: 0;        
+    display: block;
+    margin: 20px auto;        
+}
+
+@media (max-width: 768px) { /* Applica le modifiche solo se la lunghezza della finestra è minore di 768px */
+    .immaginiHome a {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+.img {
+    width: 200px;
+    height: 200px;
+     border-radius: 50%;
+  object-fit: cover; /* utile per ritagliare bene l'immagine se non è quadrata */
+}
+.menu {
+  display: flex;
+  justify-content: center; /* li centra orizzontalmente */
+  gap: 20px; /* spazio tra i bottoni */
+  margin-bottom: 30px;
+}
+
+/*inizio del responsive*/
+@media (max-width: 768px) {
+
+    /* Layout generale */
+    main {
+        padding: 15px;
+    }
+
+    /* Logo */
+    .logo {
+        width: 80px;
+        margin-bottom: 5px;
+    }
+
+    /* Linee */
+    .linea,
+    footer .linea,
+    hr.linea {
+        width: 90%;
+    }
+
+    /* Titoli */
+    h1,
+    .titoloRosa {
+        font-size: 28px;
+    }
+
+    .titolo2Rosa {
+        font-size: 22px;
+    }
+
+    /* Testi */
+    p,
+    .p-contatti {
+        font-size: 18px;
+        margin: 15px 0;
+    }
+
+    /* Bottone */
+    .bottoneContatti {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    /* Immagini home */
+    .immaginiHome {
+        margin-left: 5%;
+        margin-right: 5%;
+        gap: 10px;
+    }
+
+    .immaginiHome a {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    /* Immagini circolari */
+    .img {
+        width: 140px;
+        height: 140px;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+}
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+}
